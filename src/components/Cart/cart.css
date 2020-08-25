@@ -1,0 +1,17 @@
+.cart-summary h3{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.cart-summary .ordered{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+.orderedTotal{
+    margin-top: 0px;
+    color: rgb(167, 1, 1);
+    font-weight: 700;
+    font-size: 20px;
+}

@@ -1,0 +1,26 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.product-img img{
+    width: 16vw;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.product-details h3{
+    color: blue;
+    font-weight: 400;
+    font-size: 18px;
+}
+.product-details h3:hover{
+    text-decoration: underline;
+}
+.addToCartBtn{
+    padding: 5px 60px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: rgba(241, 205, 0, 0.924);
+    border: 1px solid rgb(173, 132, 26);
+    border-radius: 2px;
+    cursor: pointer;
+}
