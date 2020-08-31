@@ -1,10 +1,9 @@
 import React from 'react';
 import './cart.css';
-import { faShippingFast } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const cart = props.cart;
-    console.log(props.cart);
     let total = 0;
     for(let i=0; i<cart.length; i++){
         const newPrice = cart[i].price;
@@ -32,11 +31,12 @@ const Cart = (props) => {
             <h3>Order Summary</h3>
             <p className="ordered">Items ordered: {cart.length}</p>
             <p><small>Items: ${total.toFixed(2)}</small></p>
-            <p><small>Shipping and Hendling: ${shipping.toFixed(2)}</small></p>
+            <p><small>Shipping and Handling: ${shipping.toFixed(2)}</small></p>
             <p><small>Before Tex : ${beforeTex.toFixed(2)}</small></p>
             <p><small>Estimated Tax : ${tex.toFixed(2)}</small></p>
             <h4 className='orderedTotal'>Order Total: ${afterTex.toFixed(2)}</h4>
-
+            <Link to="/order"><button type="submit" className="addToCartBtn">Review Cart</button></Link>
+            <br/>
         </div>
     );
 };
